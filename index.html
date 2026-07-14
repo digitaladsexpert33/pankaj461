@@ -1,10 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PBO</title>
+
+<meta name="description" content="Join Pankaj Bhardwaj's Telegram channel for daily stock market analysis, intraday calls, and Nifty & BankNifty insights.">
+
+<!-- Open Graph Meta Tags for Facebook -->
+<meta property="og:title" content="Pankaj Bhardwaj - Stock Market Analysis">
+<meta property="og:description" content="Daily intraday calls, Nifty & BankNifty analysis, and live market updates on Telegram.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ads.digitaladsexpert.in/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-09-at-00.21.16.jpeg">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
@@ -23,11 +30,33 @@ color:#fff;
 overflow-x:hidden;
 }
 
-/* HERO */
+/* SPONSORED LABEL - Meta requires ad transparency */
+.sponsored-label{
+background:#222;
+text-align:center;
+padding:8px 16px;
+font-size:11px;
+color:#888;
+letter-spacing:1.5px;
+font-weight:600;
+text-transform:uppercase;
+}
 
+/* DISCLAIMER BANNER - Required for financial ads */
+.disclaimer-banner{
+background:linear-gradient(90deg,#1a1200,#2a1f00,#1a1200);
+border-bottom:1px solid #ffd70040;
+text-align:center;
+padding:10px 20px;
+font-size:11px;
+color:#cca840;
+line-height:1.5;
+}
+
+/* HERO */
 .hero{
 min-height:100vh;
-padding:30px 20px;
+padding:30px 20px 40px;
 background:
 linear-gradient(
 180deg,
@@ -44,7 +73,7 @@ content:'';
 position:absolute;
 width:300px;
 height:300px;
-background:#ffd70030;
+background:#ffd70020;
 border-radius:50%;
 filter:blur(120px);
 top:-120px;
@@ -53,15 +82,19 @@ transform:translateX(-50%);
 }
 
 /* PROFILE */
-
 .profile{
 width:120px;
 height:120px;
 border-radius:50%;
 overflow:hidden;
 margin:20px auto;
-border:4px solid #ffd700;
-box-shadow:0 0 25px #ffd700;
+border:3px solid #ffd70080;
+box-shadow:0 0 20px #ffd70030;
+background:#1a1a1a;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
 }
 
 .profile img{
@@ -70,120 +103,282 @@ height:100%;
 object-fit:cover;
 }
 
-/* TEXT */
+.profile-fallback{
+font-size:42px;
+color:#ffd700;
+font-weight:800;
+}
 
+/* TEXT */
 h1{
-font-size:34px;
+font-size:30px;
 font-weight:800;
 margin-top:15px;
 }
 
 .subtitle{
-color:#ccc;
+color:#bbb;
 margin-top:8px;
-font-size:15px;
+font-size:14px;
 }
 
-/* LIVE BADGE */
-
+/* LIVE BADGE - softer, not clickbait */
 .badge{
 display:inline-block;
-padding:8px 15px;
-background:#00ff8830;
+padding:7px 14px;
+background:#00ff8818;
 color:#00ff88;
 border-radius:30px;
-font-size:13px;
-font-weight:700;
+font-size:12px;
+font-weight:600;
 margin-top:10px;
+border:1px solid #00ff8825;
 }
 
-/* STATS */
-
+/* STATS - removed misleading "95% accuracy" */
 .stats{
 display:flex;
 justify-content:space-between;
-margin-top:35px;
+margin-top:30px;
 gap:10px;
 }
 
 .stat{
 flex:1;
-background:#111;
-padding:15px;
-border-radius:18px;
+background:#0e0e0e;
+padding:15px 10px;
+border-radius:16px;
+border:1px solid #1a1a1a;
 }
 
 .stat h2{
 color:#ffd700;
-font-size:24px;
+font-size:22px;
 }
 
 .stat span{
-font-size:12px;
-color:#aaa;
+font-size:11px;
+color:#888;
 }
 
-/* CTA */
-
+/* CTA - no misleading claims */
 .join-btn{
 display:block;
-margin-top:30px;
-padding:18px;
-border-radius:18px;
+margin-top:28px;
+padding:16px;
+border-radius:16px;
 text-decoration:none;
-font-weight:800;
-font-size:17px;
+font-weight:700;
+font-size:16px;
 background:#ffd700;
 color:#000;
-box-shadow:0 0 25px #ffd700;
-animation:pulse 1.5s infinite;
+box-shadow:0 4px 25px #ffd70040;
+transition:transform 0.2s,box-shadow 0.2s;
+cursor:pointer;
+border:none;
+width:100%;
 }
 
-@keyframes pulse{
-50%{
-transform:scale(1.04);
-}
+.join-btn:hover{
+transform:translateY(-2px);
+box-shadow:0 6px 30px #ffd70060;
 }
 
-/* FEATURES */
-
+/* FEATURES - factual, no exaggeration */
 .features{
-margin-top:35px;
+margin-top:30px;
 text-align:left;
 }
 
 .feature{
-background:#111;
-padding:16px;
-border-radius:15px;
-margin-bottom:12px;
-font-size:14px;
+background:#0e0e0e;
+padding:14px 16px;
+border-radius:14px;
+margin-bottom:10px;
+font-size:13px;
+color:#ddd;
+border:1px solid #1a1a1a;
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.feature-icon{
+color:#ffd700;
+font-size:16px;
+flex-shrink:0;
 }
 
 /* TRUST BOX */
-
 .trust{
-margin-top:25px;
-background:#111;
+margin-top:22px;
+background:#0e0e0e;
 padding:18px;
-border-radius:18px;
+border-radius:16px;
+border:1px solid #1a1a1a;
+text-align:left;
 }
 
 .trust h3{
 color:#ffd700;
-margin-bottom:10px;
+margin-bottom:8px;
+font-size:15px;
 }
 
+.trust p{
+font-size:13px;
+color:#aaa;
+line-height:1.6;
+}
+
+/* INLINE PRIVACY SECTION - Meta wants this ON the page */
+.legal-section{
+margin-top:25px;
+background:#0a0a0a;
+border:1px solid #1a1a1a;
+border-radius:16px;
+padding:20px;
+text-align:left;
+}
+
+.legal-section h4{
+font-size:14px;
+color:#ffd700;
+margin-bottom:8px;
+}
+
+.legal-section p{
+font-size:11px;
+color:#666;
+line-height:1.7;
+margin-bottom:14px;
+}
+
+.legal-tabs{
+display:flex;
+gap:6px;
+margin-bottom:14px;
+flex-wrap:wrap;
+}
+
+.legal-tab{
+padding:6px 14px;
+background:#111;
+border:1px solid #222;
+border-radius:8px;
+font-size:11px;
+color:#aaa;
+cursor:pointer;
+transition:all 0.2s;
+font-family:'Poppins',sans-serif;
+}
+
+.legal-tab.active{
+background:#ffd70020;
+border-color:#ffd70050;
+color:#ffd700;
+}
+
+.legal-content{
+display:none;
+}
+
+.legal-content.active{
+display:block;
+}
+
+.legal-content p{
+margin-bottom:8px;
+}
+
+/* FOOTER */
 .footer-links{
-  margin-top:18px;
-  font-size:13px;
-  line-height:1.7;
+margin-top:18px;
+font-size:11px;
+line-height:1.8;
+text-align:center;
+color:#555;
 }
 
 .footer-links a{
-  color:#0a84ff;
-  text-decoration:none;
-  font-weight:600;
+color:#0a84ff;
+text-decoration:none;
+font-weight:600;
+}
+
+.footer-links a:hover{
+text-decoration:underline;
+}
+
+/* PRE-LANDING OVERLAY - For financial content consent */
+.consent-overlay{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.95);
+z-index:9999;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:30px;
+}
+
+.consent-box{
+background:#111;
+border:1px solid #222;
+border-radius:20px;
+padding:30px 25px;
+max-width:400px;
+width:100%;
+text-align:center;
+}
+
+.consent-box h2{
+font-size:20px;
+font-weight:700;
+margin-bottom:10px;
+color:#ffd700;
+}
+
+.consent-box p{
+font-size:13px;
+color:#999;
+line-height:1.7;
+margin-bottom:20px;
+}
+
+.consent-accept{
+width:100%;
+padding:14px;
+background:#ffd700;
+color:#000;
+border:none;
+border-radius:12px;
+font-size:15px;
+font-weight:700;
+cursor:pointer;
+font-family:'Poppins',sans-serif;
+margin-bottom:10px;
+}
+
+.consent-decline{
+background:none;
+border:none;
+color:#555;
+font-size:12px;
+cursor:pointer;
+font-family:'Poppins',sans-serif;
+text-decoration:underline;
+}
+
+.consent-disclaimer{
+margin-top:16px;
+padding:12px;
+background:#1a1200;
+border-radius:10px;
+font-size:10px;
+color:#887744;
+line-height:1.6;
+text-align:left;
 }
 
 </style>
@@ -209,20 +404,50 @@ src="https://www.facebook.com/tr?id=2881915885486279&ev=PageView&noscript=1"
 </head>
 <body>
 
+<!-- PRE-LANDING CONSENT OVERLAY -->
+<div class="consent-overlay" id="consentOverlay">
+<div class="consent-box">
+<h2>⚠️ Important Notice</h2>
+<p>
+This page contains information related to stock market trading and analysis. Trading in financial markets involves substantial risk of loss and is not suitable for every investor.
+</p>
+<button class="consent-accept" onclick="acceptConsent()">
+I Understand, Continue
+</button>
+<button class="consent-decline" onclick="declineConsent()">
+Go Back
+</button>
+<div class="consent-disclaimer">
+<strong>Risk Disclaimer:</strong> Stock market trading is subject to market risks. Past performance is not indicative of future results. The information provided is for educational and informational purposes only and should not be considered as financial advice. Please consult a certified financial advisor before making any investment decisions.
+</div>
+</div>
+</div>
+
+<!-- SPONSORED LABEL -->
+<div class="sponsored-label">Sponsored</div>
+
+<!-- FINANCIAL DISCLAIMER BANNER -->
+<div class="disclaimer-banner">
+⚠️ Stock trading involves risk. Not financial advice. For educational purposes only. Read full disclaimer below.
+</div>
+
 <section class="hero">
 
 <div class="badge">
-🟢 LIVE MARKET UPDATES
+🟢 Market Analysis Channel
 </div>
 
 <div class="profile">
-<img src="https://ads.digitaladsexpert.in/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-09-at-00.21.16.jpeg">
+<img src="https://ads.digitaladsexpert.in/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-09-at-00.21.16.jpeg"
+     alt="Pankaj Bhardwaj - Stock Market Analyst"
+     onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+<div class="profile-fallback" style="display:none;position:absolute;align-items:center;justify-content:center;width:100%;height:100%;">PB</div>
 </div>
 
 <h1>Pankaj Bhardwaj</h1>
 
 <p class="subtitle">
-India's Trusted Stock Market Analyst
+Stock Market Analyst &amp; Educator
 </p>
 
 <div class="stats">
@@ -233,74 +458,148 @@ India's Trusted Stock Market Analyst
 </div>
 
 <div class="stat">
-<h2>95%</h2>
-<span>Accuracy</span>
+<h2>10K+</h2>
+<span>Channel Members</span>
 </div>
 
 <div class="stat">
-<h2>10K+</h2>
-<span>Members</span>
+<h2>Daily</h2>
+<span>Market Updates</span>
 </div>
 
 </div>
 
-<a href="https://telegram.me/+uzZujxmw7PkyY2Nl" class="join-btn">
-🚀 JOIN TELEGRAM CHANNEL
+<a href="https://telegram.me/+uzZujxmw7PkyY2Nl" class="join-btn" id="ctaBtn">
+Open Telegram Channel
 </a>
 
 <div class="features">
 
 <div class="feature">
-✅ Daily Intraday Calls
+<span class="feature-icon">📊</span>
+Daily Intraday Analysis
 </div>
 
 <div class="feature">
-📈 Nifty & BankNifty Analysis
+<span class="feature-icon">📈</span>
+Nifty &amp; BankNifty Insights
 </div>
 
 <div class="feature">
-🔥 Live Market Updates
+<span class="feature-icon">🔔</span>
+Live Market Updates
 </div>
 
 <div class="feature">
-💰 High Accuracy Setups
+<span class="feature-icon">📚</span>
+Educational Content
 </div>
 
 </div>
 
 <div class="trust">
-<h3>Why Join?</h3>
+<h3>About This Channel</h3>
 <p>
-Get daily trading opportunities, market analysis,
-and educational content directly on Telegram.
+This channel shares daily stock market analysis, educational content, and market observations. All shared views are personal opinions for educational purposes and should not be treated as investment advice.
 </p>
 </div>
 
+<!-- INLINE LEGAL SECTION - Meta requires this ON the page -->
+<div class="legal-section">
 
- <div class="footer-links">
+<div class="legal-tabs">
+<div class="legal-tab active" onclick="showLegal('privacy',this)">Privacy Policy</div>
+<div class="legal-tab" onclick="showLegal('disclaimer',this)">Disclaimer</div>
+<div class="legal-tab" onclick="showLegal('terms',this)">Terms</div>
+</div>
 
-    Ads Maintained By  
-    <a href="https://telegram.me/+ifc6dyg-xiA2ZGE1" target="_blank">
-      Digital Ads Expert
-    </a>
+<div class="legal-content active" id="privacy">
+<p><strong>Privacy Policy</strong></p>
+<p>We collect minimal data necessary to operate this landing page. We do not collect any personal financial information, bank details, or trading data.</p>
+<p><strong>Information We Collect:</strong> We use Meta Pixel (Facebook) for ad performance tracking. This may collect anonymous data such as page views, device type, and general location (country/city level only) via cookies.</p>
+<p><strong>Third-Party Services:</strong> Clicking the Telegram link will redirect you to Telegram's platform, which has its own privacy policy. We are not responsible for data practices of third-party services.</p>
+<p><strong>Data Sharing:</strong> We do not sell, rent, or share your personal data with any third parties for marketing purposes.</p>
+<p><strong>Cookies:</strong> You can disable cookies in your browser settings. However, this may affect page functionality.</p>
+<p><strong>Contact:</strong> For privacy-related queries, reach out via the Telegram channel linked on this page.</p>
+<p><strong>Last Updated:</strong> June 2025</p>
+</div>
 
-    <br><br>
+<div class="legal-content" id="disclaimer">
+<p><strong>Disclaimer</strong></p>
+<p>The information provided on this page and through the linked Telegram channel is strictly for educational and informational purposes only.</p>
+<p><strong>Not Financial Advice:</strong> Nothing on this page constitutes financial advice, investment advice, trading advice, or any other form of professional advice. We are not SEBI-registered investment advisors.</p>
+<p><strong>Risk Warning:</strong> Trading in stock markets, including equities, derivatives (F&O), and commodities, carries a high level of risk and may not be suitable for all investors. You could lose some or all of your invested capital.</p>
+<p><strong>No Guarantees:</strong> We do not guarantee any specific returns, profits, or accuracy of any analysis shared. Past performance is not indicative of future results.</p>
+<p><strong>Independent Research:</strong> Users are strongly advised to conduct their own research and consult with a qualified SEBI-registered financial advisor before making any investment or trading decisions.</p>
+<p><strong>No Liability:</strong> Pankaj Bhardwaj, this platform, and its associates shall not be held liable for any financial losses incurred based on information shared through this page or the Telegram channel.</p>
+<p><strong>Last Updated:</strong> June 2025</p>
+</div>
 
-    <a href="https://privacypolicy2.pages.dev" target="_blank">
-      Privacy Policy
-    </a> •
-    <a href="https://disclaimer2.pages.dev/" target="_blank">
-      Disclaimer
-    </a> •
-    <a href="https://terms2.pages.dev/" target="_blank">
-      Terms
-    </a>
+<div class="legal-content" id="terms">
+<p><strong>Terms of Service</strong></p>
+<p>By accessing this page and joining the linked Telegram channel, you agree to the following terms:</p>
+<p><strong>Eligibility:</strong> You must be 18 years or older to use this service. By proceeding, you confirm you meet this requirement.</p>
+<p><strong>Purpose:</strong> This channel provides educational content about stock market analysis. It is not a subscription service, paid group, or advisory service unless explicitly stated otherwise.</p>
+<p><strong>User Responsibility:</strong> All trading and investment decisions made by you are solely your responsibility. We are not liable for any outcomes of your trades.</p>
+<p><strong>Intellectual Property:</strong> All original content shared on the channel is the property of Pankaj Bhardwaj. Redistribution without permission is prohibited.</p>
+<p><strong>Modifications:</strong> We reserve the right to modify these terms at any time without prior notice. Continued use constitutes acceptance of modified terms.</p>
+<p><strong>Governing Law:</strong> Any disputes shall be subject to the jurisdiction of courts in India.</p>
+<p><strong>Last Updated:</strong> June 2025</p>
+</div>
 
-  </div>
+</div>
 
+<div class="footer-links">
+Ads Maintained By
+<a href="https://telegram.me/+ifc6dyg-xiA2ZGE1" target="_blank" rel="noopener noreferrer">
+Digital Ads Expert
+</a>
+<br><br>
+<a href="javascript:void(0)" onclick="showLegal('privacy',document.querySelectorAll('.legal-tab')[0]);document.querySelector('.legal-section').scrollIntoView({behavior:'smooth'})">
+Privacy Policy
+</a> •
+<a href="javascript:void(0)" onclick="showLegal('disclaimer',document.querySelectorAll('.legal-tab')[1]);document.querySelector('.legal-section').scrollIntoView({behavior:'smooth'})">
+Disclaimer
+</a> •
+<a href="javascript:void(0)" onclick="showLegal('terms',document.querySelectorAll('.legal-tab')[2]);document.querySelector('.legal-section').scrollIntoView({behavior:'smooth'})">
+Terms
+</a>
+</div>
 
 </section>
 
+<script>
+// Consent overlay logic
+function acceptConsent() {
+  document.getElementById('consentOverlay').style.display = 'none';
+  document.body.style.overflow = 'auto';
+  fbq('track', 'ConsentAccepted');
+}
+
+function declineConsent() {
+  window.location.href = 'about:blank';
+}
+
+// Prevent scroll when overlay is active
+document.body.style.overflow = 'hidden';
+
+// Legal tabs
+function showLegal(id, btn) {
+  document.querySelectorAll('.legal-content').forEach(function(el) {
+    el.classList.remove('active');
+  });
+  document.querySelectorAll('.legal-tab').forEach(function(el) {
+    el.classList.remove('active');
+  });
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+
+// Track CTA click
+document.getElementById('ctaBtn').addEventListener('click', function() {
+  fbq('track', 'Lead');
+});
+</script>
+
 </body>
 </html>
-
